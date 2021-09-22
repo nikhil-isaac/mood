@@ -1,7 +1,8 @@
 # Mood - Help your    friends with their moods
 ## What is Mood?
 
-The goal of mood project is to develop an application that can find an emotion of a person, and eliminate the negative state of mind by suggestive measures. As a starting point we want to focus on develop an application that can help a user of the app to suggest a playlist to anybody who are unhappy and present in the app database.
+The goal of mood project is to develop an application that can find an emotion of a person, and eliminate the negative state of mind by suggestive measures. As a starting point to solve this problem, we developed an application that can help a user to suggest a playlist to anybody in the app who are unhappy.
+
 Research has shown that social networking activity is a good source to gauge a person’s state of mind. Mood of a user is often reflected in his/her social content, like tweets, blogs, article, status updates, etc. Timely analysis of a user’s social media can be used to improve the feelings, and even save a person’s life in an extreme case! Hence it becomes important to regularly analyze the social-media health of our friends and family to take timely action.
  
 Our aim is to provide a platform for the app users to help social media users who are having a negative state of mind and also a build a better social interaction between the users. We were truly inspired by the <a href="https://www.ibm.com/watson/services/tone-analyzer/">IBM watson tone analyzer</a> and and leverage its <a href="https://github.com/watson-developer-cloud/node-sdk">node sdk</a>.
