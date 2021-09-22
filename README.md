@@ -5,7 +5,7 @@ The goal of mood project is to develop an application that can find an emotion o
 
 Research has shown that social networking activity is a good source to gauge a person’s state of mind. Mood of a user is often reflected in his/her social content, like tweets, blogs, article, status updates, etc. Timely analysis of a user’s social media can be used to improve the feelings, and even save a person’s life in an extreme case! Hence it becomes important to regularly analyze the social-media health of our friends and family to take timely action.
  
-Our aim is to provide a platform for the app users to help social media users who are having a negative state of mind and also a build a better social interaction between the users. We were truly inspired by the <a href="https://www.ibm.com/watson/services/tone-analyzer/">IBM watson tone analyzer</a> and and leverage its <a href="https://github.com/watson-developer-cloud/node-sdk">node sdk</a>.
+Our aim is to provide a platform for the users to help other users who are having a negative state of mind through social media and to also a build a better social relationship/bonding with others. We were truly inspired by the <a href="https://www.ibm.com/watson/services/tone-analyzer/">IBM watson tone analyzer</a> and and leverage its <a href="https://github.com/watson-developer-cloud/node-sdk">node sdk</a>.
 
 The key to our project is to build a social interaction while suggesting high quality songs from spotify that a friend/family only knows about what makes the person very happy and make it a social way of handling depression.
 ## Desktop 
