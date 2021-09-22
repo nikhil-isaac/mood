@@ -7,7 +7,7 @@ Research has shown that social networking activity is a good source to gauge a p
  
 Our aim is to provide a platform for the users to help other users who are having a negative state of mind through social media and to also a build a better social relationship/bonding with others. We have used the <a href="https://www.ibm.com/watson/services/tone-analyzer/">IBM Watson Tone Analyzer</a> and have also leveraged its <a href="https://github.com/watson-developer-cloud/node-sdk">Node SDK</a>.
 
-The key to our project is to build a social media app that can help the users in suggesting songs based on the mood of the other person from spotify that could make the other person happy and could also lead to a path of tackling depression.
+The aim of our project is to build a social media app that can help the users in suggesting songs based on the mood of the other person from spotify that could make the other person happy and could also lead to a path of tackling depression.
 ## Desktop 
 ![alt text](https://github.com/nikhil-isaac/mood/blob/master/assets/screenshots/home.png)
 ![alt text](https://github.com/nikhil-isaac/mood/blob/master/assets/screenshots/home-1.png)
