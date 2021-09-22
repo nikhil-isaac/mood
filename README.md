@@ -1,4 +1,4 @@
-# IBMHackChallenge - A Mega Hackathon
+# Mood - Help your    friends with their moods
 ## What is Mood?
 
 The goal of mood project is to develop an application that can find an emotion of a person, and eliminate the negative state of mind by suggestive measures. As a starting point we want to focus on develop an application that can help a user of the app to suggest a playlist to anybody who are unhappy and present in the app database.
