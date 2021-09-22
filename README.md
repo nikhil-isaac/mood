@@ -8,10 +8,10 @@ Our aim is to provide a platform for the app users to help social media users wh
 
 The key to our project is to build a social interaction while suggesting high quality songs from spotify that a friend/family only knows about what makes the person very happy and make it a social way of handling depression.
 ## Desktop 
-![alt text](https://github.com/nikhil-isaac/IBMHackChallenge/blob/master/assets/screenshots/home.png)
-![alt text](https://github.com/nikhil-isaac/IBMHackChallenge/blob/master/assets/screenshots/home-1.png)
+![alt text](https://github.com/nikhil-isaac/mood/blob/master/assets/screenshots/home.png)
+![alt text](https://github.com/nikhil-isaac/mood/blob/master/assets/screenshots/home-1.png)
 ## Mobile
-![alt text](https://github.com/nikhil-isaac/IBMHackChallenge/blob/master/assets/screenshots/mobile.jpeg)
+![alt text](https://github.com/nikhil-isaac/mood/blob/master/assets/screenshots/mobile.jpeg)
 
 ## How does it work?
 
@@ -27,7 +27,7 @@ The mood project is built using the express framework. Some of the important com
 8. In addition to sending a playlist from spotify, a user can also send a message to the person who is unhappy that can change the mood of that person.
 
 ## Architecture:
-![alt text](https://github.com/nikhil-isaac/IBMHackChallenge/blob/master/assets/architecture.jpg)
+![alt text](https://github.com/nikhil-isaac/mood/blob/master/assets/architecture.jpg)
 
 1. User  can view the playlists that was send by other users in their mood dashboard.
 2. The users can listen to the spotify playlist songs in the spotify web player.
@@ -48,7 +48,7 @@ Tech Stack:
 ## Presentation:
 
 
-<a href="https://github.com/nikhil-isaac/IBMHackChallenge/blob/master/assets/IBMHackChallenge%20-%20Mood.pdf">Click Here</a>
+<a href="https://github.com/nikhil-isaac/mood/blob/master/assets/IBMHackChallenge%20-%20Mood.pdf">Click Here</a>
 
 ## Video:
 
@@ -57,4 +57,4 @@ Tech Stack:
 
  ## Document:
  
- <a href="https://github.com/nikhil-isaac/IBMHackChallenge/blob/master/assets/Mood-Document.docx">Click Here</a>
+ <a href="https://github.com/nikhil-isaac/mood/blob/master/assets/Mood-Document.docx">Click Here</a>
