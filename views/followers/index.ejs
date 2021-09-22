@@ -1,0 +1,32 @@
+<% include ../partials/header %>
+<div class="container"> 
+    <div class="row">
+    <div class="col-lg-12">
+<h1>Your Followers!!</h1>
+<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+     
+            <% data.forEach(function(follower){ %>
+                <div class="col-md-3 col-sm-6">
+               
+                        <div class="thumbnail">
+                            <img src="<%= follower["profile_pic"] %>"">
+                            <div class="caption">
+                                <h4><%= follower["name"] %></h4>
+                                <h6><%= follower["screen_name"] %></h6>
+                                <h4><strong><%= follower["current_emotion"] %></strong></h4>
+                                <p><%= follower["latest_tweets"][0] %></p>
+                                <a href="/followers/<%= follower._id %>"class="btn btn-primary">Suggest Me</a>
+                            </div>                            
+                        </div>
+                                   
+                </div> 
+            <% }) %>  
+    
+    </div> 
+</div>
+</div>
+</div>
+
+
+
+<% include ../partials/footer %>

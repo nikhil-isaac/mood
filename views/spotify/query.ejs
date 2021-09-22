@@ -1,0 +1,26 @@
+<% include ../partials/header %>
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center">Spotify Search!</h1>
+        <div style="width: 30%; margin:25px auto;">
+            <form action="/spotify/<%= follower_id %>/new" method="POST">
+                <div class="form-group">
+                        <!-- <input class="form-control" type="text" name="param_type"  placeholder="Type"> -->
+                        <select class="form-control" type="text" name="param_type" placeholder="Type">
+                            <option>playlists</option>
+                        </select>
+
+                </div>
+                <div class="form-group">
+                        <input class="form-control" type="text" name="param_query"  placeholder="Query">
+                </div>
+                <div class="form-group">
+                        <button class="btn btn-lg btn-primary btn-block">Search</button>
+                </div> 
+            </form>
+            <a href="/followers/<%= follower_id %>/">Go Back</a>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>

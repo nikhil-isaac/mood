@@ -1,0 +1,32 @@
+<% include ../partials/header %>
+<h1>Suggest a playlist for your friend</h1>
+
+<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+   
+        <% data["playlists"]["items"].forEach(function(item){ %>  
+            <div class="col-md-3 col-sm-6">
+     
+                    <div class="thumbnail">
+                        <img src="<%= item["images"][0]["url"] %>"">
+                        <div class="caption">
+                            <h3><%= item["name"] %></h3>
+                            <a href="<%= item["external_urls"]["spotify"] %>">Listen</a>
+                            <form action="/followers/<%= follower_id %>/spotify" method="POST">
+                                <input class="hidden" type="text" name="spotify[image]" value="<%= item["images"][0]["url"] %>"">                                    
+                                <input class="hidden" type="text" name="spotify[type]" value="<%= type %>">
+                                <input  class="hidden"type="text" name="spotify[name]" value="<%= item["name"] %>">                                  
+                                <input class="hidden" type="text" name="spotify[link]" value="<%= item["external_urls"]["spotify"] %>">
+                                <input type="text" name="spotify[text]" placeholder="Enter a message">
+                                <input type="submit" class="btn btn-primary"value="Send">
+                            </form>                          
+                        </div> 
+                    </div>
+      
+            </div>
+        <% }) %>
+        <a href="/followers/<%= follower_id %>/">Search Again</a>
+</div>
+
+
+
+<% include ../partials/footer %>

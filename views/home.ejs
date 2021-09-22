@@ -1,0 +1,71 @@
+<% include partials/header %>
+
+
+    
+<div class="container">
+    <!-- <div> -->
+            <ul class="slideshow">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+            <!-- </div> -->
+    <!-- <header class="jumbotron">
+        <div class="container"> 
+            <h1>Welcome to Mood!</h1>
+            <p>Join now and help your friends from twitter with their mood</p>
+            <p>
+                <a class="btn btn-primary btn-large" href="followers">Dashboard</a>
+            </p>
+        </div>
+    </header> -->
+    <!-- <div id="landing-header">           
+        <h1>Welcome to Mood!</h1>
+       <a href="followers" class="btn btn-lg btn-primary">Dashboard</a>
+       <p>Join now and help your friends from twitter with their mood</p>
+   
+   </div> -->
+   <div id="landing-header">
+        <h1>Welcome to Mood!</h1>
+        <img src="/images/mood.png" width="25%" height="25%">
+        <p>Join now and help your friends from twitter<i class="fab fa-twitter"></i> with their mood</p>
+        <a href="followers" class="btn btn-lg btn-default">Get Started</a>
+        
+    </div>
+    <div id="landing-header-scroll">
+            <p>Scroll Down</p>
+            <p><i class="fas fa-angle-double-down"></i></p>
+    </div>
+    <h3 id="landing-header-next" style="color: #fff;font-size: 2em;
+    text-shadow: 2px 2px 10px black;" >People who are being helped with Mood</h3>
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+
+        <% data.forEach(function(follower){ %>   
+            <!-- <div class="col-sm-4 col-sm-6"> -->
+            <div class="col-md-3 col-sm-6">        
+                    <div class="thumbnail">
+                        <img src="<%= follower["profile_pic"] %>"">
+                        <div class="caption">
+                                <h4><%= follower["name"] %></h4>
+                                <h6><%= follower["screen_name"] %></h6>
+                                <h4><%= follower["current_emotion"] %></h4>
+                                <p>
+                                    <a style="font-size: 22px;" href="https://twitter.com/<%= follower["screen_name"] %>"</a><i class="fab fa-twitter"></i></a> 
+                                </p>
+                                
+                                <a href="/followers/<%= follower._id %>"class="btn btn-primary">Suggest Me</a>
+                        </div>
+                    </div>                  
+                    
+          
+            </div> 
+        <% }) %>
+
+    </div>
+
+    
+</div>
+
+<% include partials/footer %>

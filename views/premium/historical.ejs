@@ -1,0 +1,38 @@
+<% include ../partials/header %>
+
+<div class="well"> 
+    <div class="text-right">
+        <!-- <a class ="btn btn-success" href="/followers/<%= follower._id %>/messages/new"><i class="far fa-envelope"></i>     Add New Nessage</a> -->
+        <!-- <a class ="btn btn-success" href="/callback/<%= follower._id %>"><i class="fab fa-spotify"></i>    Suggest a playlist from Spotify</a> -->
+    </div>
+
+    <h2>Historical Tweets - <%= follower.name%></h2>
+    <div class="pull-right"><h3>Most Dominant emotion: </h3>
+        <% if(typeof overall_emotion == 'string' && overall_emotion) { %>
+            <span><h2><strong><%= overall_emotion%></strong></span> </h2>
+        <% } %>
+    </div>
+     
+    <form action="/premium/<%= follower._id %>" method="POST">
+    <input class="btn btn-primary navbar-btn" type="submit" value="Add Tweets" formaction="/premium/<%= follower._id %>/add" formmethod="POST">
+    <input class="btn btn-primary navbar-btn" type="submit" value="Synchronize Tweet List" formaction="/premium/<%= follower._id %>/sync %>" formmethod="POST">
+    <input class="btn btn-primary navbar-btn" type="submit" value="Find Most Dominant Emotion" formaction="/premium/<%= follower._id %>/analyze %>" formmethod="POST">
+    </form>
+    <hr>
+    
+    
+    
+    <% follower.tweets.forEach(function(tweet){ %>
+        <div class="row">
+            <div class="col-md-12">                    
+                <strong><%= tweet.created_at %></strong>
+                <h4 class="pull-right"><%= tweet.emotion %></h4>
+                <p>
+                    <%= tweet.text %>
+                </p>
+            </div>
+        </div>
+    <% }) %>
+</div>
+
+<% include ../partials/footer %>

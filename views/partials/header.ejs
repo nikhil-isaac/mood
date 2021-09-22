@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head><meta name="viewport" content="width=device-width, initial-scale=1">        
+        <title>Mood</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+       
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <link rel="stylesheet" href="/stylesheets/home.css">
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script src="https://d3js.org/d3.v4.js"></script>
+    </head>
+    <body>
+        
+  
+        <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-mood" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">Mood</a>
+                    </div>   
+                    <div class="collapse navbar-collapse" id="bs-nav-mood">   
+                            <audio controls loop>               
+                                    <source src="/audio/Relaxation.mp3" type="audio/mp3">
+                                </audio> 
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <% if(!currentUser) { %>
+                                <li><a href="login">Login</a></li>
+                                <li><a href="register">Sign Up</a></li>  
+                            <% } else { %> 
+                                
+                                <li>
+                                <form action="/twitter" method="POST">
+                                    <i class="fas fa-arrow-down"></i>
+                                   <input class="btn btn-primary navbar-btn" type="submit" value="Synchronize Follower List" formaction="/followers/new" formmethod="POST">   
+                                   <i class="fas fa-arrow-down"></i>
+                                   <input class="btn btn-primary navbar-btn" type="submit" value="Synchronize the emotions" formaction="/twitter" formmethod="POST">
+               
+                                </form></li>
+                                <li><a href="/profile">Signed In As <%= currentUser.username %></a></li>
+                                <li><a href="logout">Logout</a></li>
+                            <% } %>
+                        </ul>
+        
+                    </div>         
+                </div>
+            </nav>
+            <% if(error && error.length > 0) { %>
+            <div class="container">
+                <div class="alert alert-danger" role="alert">
+                        <%= error %>
+                    </div>
+            </div>
+            <% } %>
+            <% if(success && success.length > 0) { %>
+            <div class="container">
+                    <div class="alert alert-success" role="alert">
+                            <%= success %>
+                        </div>
+            </div>
+            <% } %>
+            
+
+            
+            
