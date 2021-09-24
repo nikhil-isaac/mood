@@ -38,10 +38,10 @@ The mood project is built using the express framework.
 
 **Tech Stack:**
 
-1. Express:
-2. Mongoose:
+1. Express
+2. Mongoose
 3. MongoDB
-4. Passport:
+4. Passport
 5. Twitter Node Client
 6. Watson Developer Cloud - Tone Analyzer
 7. Spotify Web API Node
