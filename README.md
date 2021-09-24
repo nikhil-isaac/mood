@@ -36,7 +36,7 @@ The mood project is built using the express framework. Some of the important com
 
 The mood project is built using the express framework. 
 
-Tech Stack:
+**Tech Stack:**
 
 1. Express:
 2. Mongoose:
